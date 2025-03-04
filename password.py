@@ -122,7 +122,7 @@ def check_password_strength(password):
     # display password strength
     if re.search(r'[A-Z]', password) and re.search(r"[a-z]", password) and re.search(r'[0-9]', password) and re.search(r'[!@#$%^&*()]', password):
         score += 1;
-        st.success("✔️** Strong Password ** - You are good to go");
+        st.success("✔️**Strong Password** - Good Job! Your Password is Strong");
     elif re.search(r'[A-Z]', password) and re.search(r"[a-z]", password) and re.search(r'[0-9]', password):
         score += 1;
         st.warning("🚨**Moderate Password** - Try to add a special character for more security");
