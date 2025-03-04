@@ -26,7 +26,7 @@ st.markdown(
         width: 100%;
     }
     .stButton button{
-        width: 40% !important;
+        width: 50%;
         background-color: #007bff;
         color: white;
         font-size: 18px;
