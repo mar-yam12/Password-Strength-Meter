@@ -20,25 +20,80 @@ st.markdown(
         width: 60% !important;
         margin: auto;
     }
+    .stButton {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     .stButton button{
-        width: 50%;
+        width: 40% !important;
         background-color: #007bff;
         color: white;
         font-size: 18px;
         font-weight: bold;
         border-radius: 5px;
         padding: 10px;
-        margin: 10px;
+        margin: 10px auto;
+        transition: all 0.3s ease;
     }
     .stButton button:hover {
         background-color: #0056b3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .stExpander {
+        width: 80% !important;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .stMarkdown {
+        text-align: center;
+    }
+    .stSuccess {
+        background-color: #d4edda;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px auto;
+        width: 80%;
+    }
+    .stWarning {
+        background-color: #fff3cd;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px auto;
+        width: 80%;
+    }
+    .stError {
+        background-color: #f8d7da;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px auto;
+        width: 80%;
+    }
+    .stTextInput input {
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+    .stTextInput input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    }
+    .stTitle {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 50px;
+        font-weight: bold;
     }
     </style>
 """, unsafe_allow_html=True)
 
 # Page Title and Description
-st.title("🔐Password Strength Checker");
-st.write("Check the strength of your password🔎");
+st.markdown('<div class="stTitle">🔐 Password Strength Checker</div>', unsafe_allow_html=True);
+st.markdown("### Check the strength of your password 🔎");
 
 # function to check password strength
 def check_password_strength(password):
