@@ -17,8 +17,15 @@ st.markdown(
         text-align: center;
     }
     .stTextInput {
-        width: 60% !important;
+        width: 60% ;
         margin: auto;
+    }
+    .stTextInput input {
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+    .stTextInput input:focus {
+        border-color: #007bff;
     }
     .stButton {
         display: flex;
@@ -72,13 +79,7 @@ st.markdown(
         margin: 10px auto;
         width: 80%;
     }
-    .stTextInput input {
-        padding: 10px;
-        transition: all 0.3s ease;
-    }
-    .stTextInput input:focus {
-        border-color: #007bff;
-    }
+
     .stTitle {
         text-align: center;
         display: flex;
