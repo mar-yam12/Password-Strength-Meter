@@ -78,7 +78,6 @@ st.markdown(
     }
     .stTextInput input:focus {
         border-color: #007bff;
-        box-shadow: 0 0 5px rgba(0,123,255,0.3);
     }
     .stTitle {
         text-align: center;
