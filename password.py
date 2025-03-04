@@ -78,11 +78,6 @@ def check_password_strength(password):
     else:
         st.error("😔**Weak Password** - Follow the Suggestion below to strengthen your password");
 
-# Feedback Section
-if feedback:
-    with st.expander("**Improve Your Password**"):
-        for item in feedback:
-            st.write(item);
 
 # Password Input
 password = st.text_input("Enter your password", type="password", placeholder="Enter your password", key="password",help="Password should be at least 8 characters long, contain at least one uppercase and one lowercase letter, one number and one special character");
